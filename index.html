@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gradient Picker</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+</head>
+<body>
+  <h1>Pick your own gradient!</h1>
+
+
+
+  <div class="arrows">
+    <button type="button" class="direction top" name="direction" value="to top"><i class="fas fa-arrow-up"></i></button>
+    <button type="button" class="direction top-right" name="direction" value="to top right"><i class="fas fa-arrow-up"></i></button>
+    <button type="button" class="direction right" name="direction" value="to right"><i class="fas fa-arrow-up"></i></button>
+    <button type="button" class="direction bottom-right" name="direction" value="to bottom right"><i class="fas fa-arrow-up"></i></button>
+    <button type="button" class="direction bottom" name="direction" value="to bottom"><i class="fas fa-arrow-up"></i></button>
+    <button type="button" class="direction bottom-left" name="direction" value="to bottom left"><i class="fas fa-arrow-up"></i></button>
+    <button type="button" class="direction left" name="direction" value="to left"><i class="fas fa-arrow-up"></i></button>
+    <button type="button" class="direction top-left" name="direction" value="to top left"><i class="fas fa-arrow-up"></i></button>
+  </div>
+
+
+
+  <div class="colors">
+    <label for="start">
+      <input id="start" class="visually-hidden" type="color" name="colorStart">
+      <div class="color-start indicator"></div>
+    </label>
+    <label for="end">
+      <input id="end" class="visually-hidden" type="color" name="colorEnd">
+      <div class="color-end indicator"></div>
+    </label>
+  </div>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
