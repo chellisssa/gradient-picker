@@ -38,8 +38,29 @@
     </label>
   </div>
 
+  <code id="target">
+    background-image: linear-gradient(<span id="direction"></span>; <span id="colorStart"></span>; <span id="colorEnd"></span>);
+    <button class="button" data-clipboard-action="copy" data-clipboard-target="#target" alt="Copy code">
+      <i class="fas fa-clipboard"></i>
+    </button>
+  </code>
+
+
+
 
 
   <script src="script.js"></script>
+  <script src="clipboard.js-master/dist/clipboard.min.js"></script>
+  <script>
+  var clipboard = new ClipboardJS('.button');
+
+  clipboard.on('success', function(e) {
+      console.log(e);
+  });
+
+  clipboard.on('error', function(e) {
+      console.log(e);
+  });
+  </script>
 </body>
 </html>
