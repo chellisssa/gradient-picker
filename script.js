@@ -10,12 +10,24 @@ var toLeft = document.querySelector(".left");
 var toTopLeft = document.querySelector(".top-left");
 var output = document.querySelector(".output");
 
+// DEFAULT VALUES
+document.getElementById("colorStart").innerHTML = "#ff80ff";
+document.getElementById("colorEnd").innerHTML = "#ffff80";
+document.getElementById("direction").innerHTML = "to top right";
+
+
 function handleUpdate() {
   document.documentElement.style.setProperty(`--${this.name}`, this.value);
+  if (`--${this.name}` === '--colorStart') {
+    document.getElementById("colorStart").innerHTML = this.value;
+  } else {
+    document.getElementById("colorEnd").innerHTML = this.value;
+  }
 }
 
 function directionUpdate() {
   document.documentElement.style.setProperty(`--${this.name}`, this.value);
+  document.getElementById("direction").innerHTML = this.value;
 }
 
 colorStart.addEventListener('change', handleUpdate);
