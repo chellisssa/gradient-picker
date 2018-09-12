@@ -23,6 +23,7 @@
     <button type="button" class="direction bottom-left" name="direction" value="to bottom left"><i class="fas fa-arrow-up"></i></button>
     <button type="button" class="direction left" name="direction" value="to left"><i class="fas fa-arrow-up"></i></button>
     <button type="button" class="direction top-left" name="direction" value="to top left"><i class="fas fa-arrow-up"></i></button>
+    <button type="button" class="direction radial" name="direction" value="radial-gradient"><i class="fas fa-undo"></i></button>
   </div>
 
 
@@ -39,7 +40,10 @@
   </div>
 
   <code id="target">
-    background-image: linear-gradient(<span id="direction"></span>; <span id="colorStart"></span>; <span id="colorEnd"></span>);
+
+    <p class="linear-code">background-image: linear-gradient(<span id="direction"></span>; <span id="colorStart"></span>; <span id="colorEnd"></span>);</p>
+    <p class="radial-code visually-hidden">background-image: radial-gradient(<span id="colorStartRad"></span>; <span id="colorEndRad"></span>);</p>
+
     <button class="button" data-clipboard-action="copy" data-clipboard-target="#target" alt="Copy code">
       <i class="fas fa-clipboard"></i>
     </button>
@@ -48,9 +52,8 @@
 
 
 
-
   <script src="script.js"></script>
-  <script src="clipboard.js-master/dist/clipboard.min.js"></script>
+  <script src="clipboard.min.js"></script>
   <script>
   var clipboard = new ClipboardJS('.button');
 
