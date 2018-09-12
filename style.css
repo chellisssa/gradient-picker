@@ -2,6 +2,7 @@
   --colorStart: #ff80ff;
   --colorEnd: #ffff80;
   --direction: to top right;
+  --gradient: linear-gradient;
 
 }
 
@@ -23,6 +24,8 @@ body {
   background-repeat: no-repeat;
 }
 
+
+
 .visually-hidden:not(:focus):not(:active),
 input[type="color"].visually-hidden {
 	position: absolute;
@@ -43,7 +46,7 @@ input[type="color"].visually-hidden {
 h1 {
   font-size: 50px;
   font-family: 'Raleway', Ariel, sans-serif;
-  text-shadow: 4px 4px 12px rgba(136,35,164,0.57);
+  /* text-shadow: 4px 4px 12px rgba(136,35,164,0.57); */
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 50px;
@@ -168,4 +171,8 @@ code {
 
   font-size: 40px;
   color: #322c16;
+}
+
+.radial-grad {
+  background-image: radial-gradient(var(--colorStart), var(--colorEnd));
 }
