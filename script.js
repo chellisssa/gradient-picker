@@ -27,7 +27,8 @@ function handleUpdate() {
   if (`--${this.name}` === '--colorStart') {
     document.getElementById("colorStart").textContent = this.value;
     document.getElementById("colorStartRad").textContent = this.value;
-  } else if (`--${this.name}` === '--colorEnd') {
+  } 
+  if (`--${this.name}` === '--colorEnd') {
     document.getElementById("colorEnd").textContent = this.value;
     document.getElementById("colorEndRad").textContent = this.value;
   }
