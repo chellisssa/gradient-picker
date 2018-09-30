@@ -12,12 +12,17 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   box-sizing: border-box;
   overflow: hidden;
   width: 100%;
   min-width: 500px;
+  height: 100vh;
   margin: 0;
   padding: 0;
+
 
   background-image: linear-gradient(var(--direction), var(--colorStart), var(--colorEnd));
   background-size: cover;
@@ -46,7 +51,6 @@ input[type="color"].visually-hidden {
 h1 {
   font-size: 50px;
   font-family: 'Raleway', Ariel, sans-serif;
-  /* text-shadow: 4px 4px 12px rgba(136,35,164,0.57); */
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 50px;
@@ -70,8 +74,11 @@ label {
 }
 
 .indicator {
+  display: flex;
+  align-items: center;
   border-radius: 50%;
   box-shadow: 10px 10px 14px 1px rgba(00,00,00,0.2);
+
 }
 
 .color-start {
@@ -175,4 +182,16 @@ code {
 
 .radial-grad {
   background-image: radial-gradient(var(--colorStart), var(--colorEnd));
+}
+
+input[type="text"] {
+  width: 100%;
+
+  font-size: 20px;
+  font-weight: 700;
+  font-family: Arial;
+  text-align: center;
+  text-transform: uppercase;
+
+  background: transparent;
 }

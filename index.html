@@ -15,15 +15,15 @@
 
 
   <div class="arrows">
-    <button type="button" class="direction top" name="direction" value="to top"><i class="fas fa-arrow-up"></i></button>
-    <button type="button" class="direction top-right" name="direction" value="to top right"><i class="fas fa-arrow-up"></i></button>
-    <button type="button" class="direction right" name="direction" value="to right"><i class="fas fa-arrow-up"></i></button>
-    <button type="button" class="direction bottom-right" name="direction" value="to bottom right"><i class="fas fa-arrow-up"></i></button>
-    <button type="button" class="direction bottom" name="direction" value="to bottom"><i class="fas fa-arrow-up"></i></button>
-    <button type="button" class="direction bottom-left" name="direction" value="to bottom left"><i class="fas fa-arrow-up"></i></button>
-    <button type="button" class="direction left" name="direction" value="to left"><i class="fas fa-arrow-up"></i></button>
-    <button type="button" class="direction top-left" name="direction" value="to top left"><i class="fas fa-arrow-up"></i></button>
-    <button type="button" class="direction radial" name="direction" value="radial-gradient"><i class="fas fa-undo"></i></button>
+    <button type="button" class="direction top" value="to top" onclick="directionUpdate(this.value)"><i class="fas fa-arrow-up"></i></button>
+    <button type="button" class="direction top-right" value="to top right" onclick="directionUpdate(this.value)"><i class="fas fa-arrow-up"></i></button>
+    <button type="button" class="direction right" value="to right" onclick="directionUpdate(this.value)"><i class="fas fa-arrow-up"></i></button>
+    <button type="button" class="direction bottom-right" value="to bottom right" onclick="directionUpdate(this.value)"><i class="fas fa-arrow-up"></i></button>
+    <button type="button" class="direction bottom" value="to bottom" onclick="directionUpdate(this.value)"><i class="fas fa-arrow-up"></i></button>
+    <button type="button" class="direction bottom-left" value="to bottom left" onclick="directionUpdate(this.value)"><i class="fas fa-arrow-up"></i></button>
+    <button type="button" class="direction left" value="to left" onclick="directionUpdate(this.value)"><i class="fas fa-arrow-up"></i></button>
+    <button type="button" class="direction top-left" value="to top left" onclick="directionUpdate(this.value)"><i class="fas fa-arrow-up"></i></button>
+    <button type="button" class="direction radial" value="radial-gradient" onclick="directionUpdate(this.value)"><i class="fas fa-undo"></i></button>
   </div>
 
 
@@ -31,11 +31,15 @@
   <div class="colors">
     <label for="start">
       <input id="start" class="visually-hidden" type="color" name="colorStart">
-      <div class="color-start indicator"></div>
+      <div class="color-start indicator">
+        <input class="change-start" type="text" name="colorStart">
+      </div>
     </label>
     <label for="end">
       <input id="end" class="visually-hidden" type="color" name="colorEnd">
-      <div class="color-end indicator"></div>
+      <div class="color-end indicator">
+        <input class="change-end" type="text" name="colorEnd">
+      </div>
     </label>
   </div>
 
